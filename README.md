@@ -12,20 +12,16 @@ This vertical is designed to take you from executing basic API requests to build
 
 AI engineering is rapidly moving from simple prompt design to orchestration loops. Here is what you will gain from this track:
 
-* 
-**Manual Orchestration Mastery**: Learn the exact mechanics of tool calling, function schemas, and multi-turn loops by coding them yourself—without relying on high-level frameworks.
+* **Manual Orchestration Mastery**: Learn the exact mechanics of tool calling, function schemas, and multi-turn loops by coding them yourself—without relying on high-level frameworks.
 
 
-* 
-**State Management Architecture**: Move beyond stateless APIs by designing complex context management, short-term working memory buffers, and evolving long-term memory file stores.
+* **State Management Architecture**: Move beyond stateless APIs by designing complex context management, short-term working memory buffers, and evolving long-term memory file stores.
 
 
-* 
-**Real-World Execution Capabilities**: Bridge the gap between text generation and environment interaction by building tools that read systems, run terminal commands, and review code diffs.
+* **Real-World Execution Capabilities**: Bridge the gap between text generation and environment interaction by building tools that read systems, run terminal commands, and review code diffs.
 
 
-* 
-**Leaderboard-Driven Validation**: Test your agent's performance, memory recall, and optimization metrics weekly on automated, held-out evaluation sets.
+* **Leaderboard-Driven Validation**: Test your agent's performance, memory recall, and optimization metrics weekly on automated, held-out evaluation sets.
 
 
 
@@ -37,16 +33,13 @@ Inspired by cutting-edge software engineering assistants like Claude Code, your 
 
 Your agent will be given complex coding tasks in plain English. Operating autonomously within a real local directory, it will:
 
-1. 
-**Explore & Analyze**: Map out project directories and parse codebase architecture.
+1. **Explore & Analyze**: Map out project directories and parse codebase architecture.
 
 
-2. 
-**Execute Edits**: Make precise file adjustments with visual safety diffs and confirmation checks.
+2. **Execute Edits**: Make precise file adjustments with visual safety diffs and confirmation checks.
 
 
-3. 
-**Verify & Iterate**: Run test suites via terminal commands, capture errors, and recursively debug until all tests pass.
+3. **Verify & Iterate**: Run test suites via terminal commands, capture errors, and recursively debug until all tests pass.
 
 
 
