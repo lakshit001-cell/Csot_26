@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 class ChatAgent:
-    def __init__(self,model_name: str,max_turns: int=4):
+    def __init__(self,model_name: str,max_turns: int):
         self.model_name=model_name
         self.max_turns=max_turns
         self.client = OpenAI(
