@@ -22,4 +22,4 @@ System Prompt: I included that LLM is a top research tool and one of the key poi
 
 This tool call pipeline with agentic loop was completely new to me. This week I learnt a lot from this. From debugging web fetch results by printing total characters returned or by understanding how to implement streaming in this complex scenario where agent calls tools as well along with the final answer.
 
-**Things I would like to improve:** Implementing streaming in this case along with the additional bonus function save research note.
+**Things I would like to improve:** Implementing streaming in this case along with the additional bonus function save research note. Also I left llms.txt as it is used for root level page navigation and was not usefull in direct web fetch. In future I would enable check for llms.txt
