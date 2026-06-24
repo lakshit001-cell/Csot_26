@@ -5,10 +5,8 @@ import json
 import uuid
 from openai import OpenAI
 from dotenv import load_dotenv
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-
 current_dir = os.path.dirname(os.path.abspath(__file__))
-env_path = os.path.join(BASE_DIR, '.env')
+env_path = os.path.join(current_dir, '.env')
 load_dotenv(env_path)
 
 
@@ -29,7 +27,7 @@ class Agent:
         self.model = "openai/gpt-oss-120b:free"
 
         self.max_iterations = 12
-        self.sessions_dir = os.path.join(BASE_DIR, ".agent", "sessions")
+        self.sessions_dir = os.path.abspath(".agent/sessions")
         os.makedirs(self.sessions_dir, exist_ok=True)
         
         
@@ -49,7 +47,6 @@ class Agent:
             
     def _load_procedural_memory_rules(self) -> str:
         base_prompt = "You are the primary Research agent engine. Systematically parse documents, verify facts, and build research archives inside notes/. You have access to tools such as web search web fetch get and read papers etc. utilise them wisely"
-        agents_file = os.path.join(BASE_DIR, "AGENTS.md")
         if os.path.exists("AGENTS.md"):
             try:
                 with open("AGENTS.md", "r", encoding="utf-8") as f:
